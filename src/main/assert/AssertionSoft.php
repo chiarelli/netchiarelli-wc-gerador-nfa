@@ -6,12 +6,12 @@
  * and open the template in the editor.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\assert;
+namespace NetChiarelli\WP_Plugin_NFe\assert;
 
 use Assert\Assertion;
 use Assert\InvalidArgumentException;
-use net\chiarelli\wp\plugin\gnfa\util\Result;
-use net\chiarelli\wp\plugin\gnfa\util\Severity;
+use NetChiarelli\WP_Plugin_NFe\util\Result;
+use NetChiarelli\WP_Plugin_NFe\util\Severity;
 
 /**
  * Description of Assertion
@@ -19,8 +19,8 @@ use net\chiarelli\wp\plugin\gnfa\util\Severity;
  * Proxy dinâmico estático da classe Assert\Assertion para não lançar exceções, mas somente 
  * instâncias da classe Result para informar o estado do resultado ao cliente.
  * 
- * @todo Futuramente ao refatorar o package net\chiarelli\wp\plugin\gnfa\api para 
- * um projeto independente, não esquecer de desacoplar net\chiarelli\wp\plugin\gnfa\util\Result.
+ * @todo Futuramente ao refatorar o package NetChiarelli\WP_Plugin_NFe\api para 
+ * um projeto independente, não esquecer de desacoplar NetChiarelli\WP_Plugin_NFe\util\Result.
  * 
  * @author raphael
  */

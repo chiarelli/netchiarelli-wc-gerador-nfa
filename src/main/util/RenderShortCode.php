@@ -6,10 +6,10 @@
  * and open the template in the editor.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\util;
+namespace NetChiarelli\WP_Plugin_NFe\util;
 
 use Assert\Assertion;
-use net\chiarelli\wp\plugin\gnfa\assert\AssertionSoft;
+use NetChiarelli\WP_Plugin_NFe\assert\AssertionSoft;
 
 /**
  * Description of newPHPClass

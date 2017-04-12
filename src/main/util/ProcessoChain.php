@@ -18,11 +18,11 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\util;
+namespace NetChiarelli\WP_Plugin_NFe\util;
 
 use Assert\Assertion;
-use net\chiarelli\wp\plugin\gnfa\assert\Assertions;
-use net\chiarelli\wp\plugin\gnfa\util\inner\ProcessoIterator;
+use NetChiarelli\WP_Plugin_NFe\assert\Assertions;
+use NetChiarelli\WP_Plugin_NFe\util\inner\ProcessoIterator;
 
 /**
  * Description of ProcessoChain
@@ -65,7 +65,7 @@ class ProcessoChain {
 
 }
 
-namespace net\chiarelli\wp\plugin\gnfa\util\inner;
+namespace NetChiarelli\WP_Plugin_NFe\util\inner;
 
 /**
  * @internal Classe interna. Somente para ser associada à classe ProcessoChain.

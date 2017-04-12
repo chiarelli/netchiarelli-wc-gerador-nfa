@@ -1,6 +1,6 @@
 <?php
 
-namespace net\chiarelli\wp\plugin\gnfa\util;
+namespace NetChiarelli\WP_Plugin_NFe\util;
 
 /**
  * Description of IValidate

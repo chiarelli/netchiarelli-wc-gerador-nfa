@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\hook\filter;
+namespace NetChiarelli\WP_Plugin_NFe\hook\filter;
 
 use Assert\Assertion;
 

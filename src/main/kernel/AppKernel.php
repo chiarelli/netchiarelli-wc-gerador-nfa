@@ -1,10 +1,10 @@
 <?php
 
-namespace net\chiarelli\wp\plugin\gnfa\kernel;
+namespace NetChiarelli\WP_Plugin_NFe\kernel;
 
-use net\chiarelli\wp\plugin\gnfa\assert\AssertionSoft;
-use net\chiarelli\wp\plugin\gnfa\hook\filter\HooksFilterManager;
-use net\chiarelli\wp\plugin\gnfa\util\Result;
+use NetChiarelli\WP_Plugin_NFe\assert\AssertionSoft;
+use NetChiarelli\WP_Plugin_NFe\hook\filter\HooksFilterManager;
+use NetChiarelli\WP_Plugin_NFe\util\Result;
 
 /**
  * Description of AppKernel

@@ -22,13 +22,7 @@ ini_set('display_errors', '1');
 // AppKernel::start();
 
 
-use net\chiarelli\wp\plugin\gnfa\api\estado\rj\TipoDocEnum;
-
-
-
 try {
-    
-    \net\chiarelli\wp\plugin\gnfa\draft\Main::main();    
     
 //    \net\chiarelli\wp\plugin\gnfa\draft\SefazRjDraft1::main();
     
@@ -40,6 +34,8 @@ try {
     
 //    \net\chiarelli\wp\plugin\gnfa\draft\GerandoDANFE_Draft::main();
     
+    \NetChiarelli\WP_Plugin_NFe\draft\Main::main();
+    
 //    echo '<pre>';
 //
 //    echo '</pre>';
@@ -48,7 +44,7 @@ try {
     
 //    var_dump(serialize($enum));
 
-} catch (\net\chiarelli\wp\plugin\gnfa\api\exception\ApiException $exc) {
+} catch (NetChiarelli\WP_Plugin_NFe\api\exception\ApiException $exc) {
     
     
     function stackException(Exception $exc) {

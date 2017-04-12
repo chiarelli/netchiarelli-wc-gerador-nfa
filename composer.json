@@ -24,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {      
-            "net\\chiarelli\\wp\\plugin\\gnfa\\": "src/main/"
+            "NetChiarelli\\WP_Plugin_NFe\\": "src/main/"
         },
         "files": ["src/constants.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "net\\chiarelli\\wp\\plugin\\gnfa\\draft\\": "src/draft/"        
+            "NetChiarelli\\WP_Plugin_NFe\\draft\\": "src/draft/"        
         },
         "classmap": ["src/tests/forTests/"]
     }

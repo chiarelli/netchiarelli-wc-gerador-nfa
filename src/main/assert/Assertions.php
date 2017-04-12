@@ -18,10 +18,10 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\assert;
+namespace NetChiarelli\WP_Plugin_NFe\assert;
 
 use Assert\Assertion;
-use net\chiarelli\wp\plugin\gnfa\util\Result;
+use NetChiarelli\WP_Plugin_NFe\util\Result;
 
 /**
  * Description of Assertions
@@ -215,8 +215,8 @@ class Assertions {
             }
             
             /**
-             * @todo Futuramente ao refatorar o package net\chiarelli\wp\plugin\gnfa\api para 
-             * um projeto independente, não esquecer de desaclopar net\chiarelli\wp\plugin\gnfa\util\Result.
+             * @todo Futuramente ao refatorar o package NetChiarelli\WP_Plugin_NFe\api para 
+             * um projeto independente, não esquecer de desaclopar NetChiarelli\WP_Plugin_NFe\util\Result.
              */            
             /* @var $result Result */
             $result = AssertionSoft::isInstanceOf($value, $className);

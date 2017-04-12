@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-namespace net\chiarelli\wp\plugin\gnfa\kernel;
+namespace NetChiarelli\WP_Plugin_NFe\kernel;
 
 /**
  * Description of WP_Notice
@@ -13,7 +13,7 @@ namespace net\chiarelli\wp\plugin\gnfa\kernel;
  * Dispara noticies no painel do administrador através do hook 'admin_notices'
  * 
  * É uma classe fachada. A classe que é verdadeiramente instanciada é 
- * net\chiarelli\wp\plugin\gnfa\kernel\inner\WP_Notice_real
+ * NetChiarelli\WP_Plugin_NFe\kernel\inner\WP_Notice_real
  *
  * @author raphael
  */
@@ -43,18 +43,18 @@ abstract class WP_Notice {
     
 }
 
-namespace net\chiarelli\wp\plugin\gnfa\kernel\inner;
+namespace NetChiarelli\WP_Plugin_NFe\kernel\inner;
 
 use Assert\Assertion;
-use net\chiarelli\wp\plugin\gnfa\hook\filter\HooksFilterManager;
-use net\chiarelli\wp\plugin\gnfa\kernel\WP_Notice;
+use NetChiarelli\WP_Plugin_NFe\hook\filter\HooksFilterManager;
+use NetChiarelli\WP_Plugin_NFe\kernel\WP_Notice;
 use Noodlehaus\Config;
 
 /**
  * Description of WP_Notice_real
  * 
  * Classe auxiliar que é realmente instanciado ao cliente; porém a classe 
- * net\chiarelli\wp\plugin\gnfa\kernel\WP_Notice é uma Fachada.
+ * NetChiarelli\WP_Plugin_NFe\kernel\WP_Notice é uma Fachada.
  * 
  * 
  * @internal Classe interna. Somente para ser associada à classe WP_Notice.
@@ -113,7 +113,7 @@ class WP_Notice_inner extends WP_Notice {
              * Esse filtro é para mudar a forma como as mensagens de notices 
              * são renderizadas
              * 
-             * @package \net\chiarelli\wp\plugin\gnfa\hook\filter
+             * @package \NetChiarelli\WP_Plugin_NFe\hook\filter
              */
             $row = (string) apply_filters( 'gnfa_notice_row_msg_error', 
                     sprintf( $format, esc_html( $msg ) ), 

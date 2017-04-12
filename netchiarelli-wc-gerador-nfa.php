@@ -28,7 +28,7 @@ use net\chiarelli\wp\plugin\gnfa\api\estado\rj\TipoDocEnum;
 
 try {
     
-//    \net\chiarelli\wp\plugin\gnfa\draft\Main::main();    
+    \net\chiarelli\wp\plugin\gnfa\draft\Main::main();    
     
 //    \net\chiarelli\wp\plugin\gnfa\draft\SefazRjDraft1::main();
     
@@ -70,7 +70,7 @@ try {
 }
 
 
-// die('<br><br><hr><span style="color: pink;">MASTER_DIE</span>');
+die('<br><br><hr><span style="color: pink;">MASTER_DIE</span>');
 
 
 //$client = new Client([

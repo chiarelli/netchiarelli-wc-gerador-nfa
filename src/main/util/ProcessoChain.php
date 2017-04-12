@@ -29,14 +29,14 @@ use net\chiarelli\wp\plugin\gnfa\util\inner\ProcessoIterator;
  *
  * @author raphael
  */
-class ProcessoChain implements IProcesso {
+class ProcessoChain {
     
     /** @var IProcesso[] */
     protected $processList;
     
     public function __construct(array $processList) {        
         Assertion::satisfy(
-            array($processList, IProcesso::class), 
+            array($processList, ITask::class), 
             array(Assertions::class, 'valuesArrayIsInstanceOf')
         );
         

@@ -31,6 +31,7 @@
     "autoload-dev": {
         "psr-4": {
             "net\\chiarelli\\wp\\plugin\\gnfa\\draft\\": "src/draft/"        
-        }
+        },
+        "classmap": ["src/tests/forTests/"]
     }
 }

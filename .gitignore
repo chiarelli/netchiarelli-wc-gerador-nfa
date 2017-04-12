@@ -1,6 +1,7 @@
 
 ### Project ###
 src/draft
+src/tests
 
 # Created by https://www.gitignore.io/api/symfony,netbeans,composer,wordpress
 
@@ -84,3 +85,5 @@ wp-content/plugins/hello.php
 
 
 # End of https://www.gitignore.io/api/symfony,netbeans,composer,wordpress
+
+tests/_output/*

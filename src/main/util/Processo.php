@@ -25,7 +25,7 @@ namespace net\chiarelli\wp\plugin\gnfa\util;
  *
  * @author raphael
  */
-class Processo implements IProcesso {
+abstract class Processo {
     
     protected $id;
     

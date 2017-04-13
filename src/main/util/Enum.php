@@ -40,8 +40,6 @@ abstract class Enum {
         $class = static::class;
         $oClass = new \ReflectionClass($class);
         
-        var_dump($constName, $int);
-        
         $ordinal = 0;        
         foreach ($oClass->getConstants() as $const => $value) {
             

@@ -26,7 +26,7 @@
         "psr-4": {      
             "NetChiarelli\\WP_Plugin_NFe\\": "src/main/"
         },
-        "files": ["src/constants.php"]
+        "files": ["src/constants.php", "src/main/api/constants.php"]
     },
     "autoload-dev": {
         "psr-4": {

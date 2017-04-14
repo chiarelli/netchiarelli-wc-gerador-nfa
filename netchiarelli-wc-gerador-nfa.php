@@ -44,8 +44,7 @@ try {
     
 //    var_dump(serialize($enum));
 
-} catch (NetChiarelli\WP_Plugin_NFe\api\exception\ApiException $exc) {
-    
+} catch (Exception $exc) {    
     
     function stackException(Exception $exc) {
         echo '<h4><span style="margin: 0; color: red;">Exception Class:</span> ' . get_class($exc) . '</h4><p><span style="margin: 0; color: blue;">error:</span> <span style="margin: 0; color: green;">'. $exc->getMessage().'</span></p>';

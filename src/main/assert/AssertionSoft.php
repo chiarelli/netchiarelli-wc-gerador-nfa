@@ -37,7 +37,7 @@ class AssertionSoft {
         try {
             \forward_static_call_array(array(Assertion::class, $name), $arguments);
 
-            return new Result('OK', Severity::valueOf(Severity::SUCCESS));
+            return new Result("valid {$name}", Severity::valueOf(Severity::SUCCESS));
             
         } catch (InvalidArgumentException $exc) {
             

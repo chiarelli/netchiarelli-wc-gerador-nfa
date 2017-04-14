@@ -19,17 +19,4 @@ class Severity extends Enum {
     const ERROR      = 'ERROR';
     const FAIL       = 'FAIL';
 
-
-    protected function __construct($ordinal, $value, $constName) {
-        parent::__construct($ordinal, $value, $constName);
-    }
-    
-    public static function valueOf($constName) {
-        return parent::prepareDefine(__CLASS__, $constName);
-    }
-
-    public static function indexOf($int) {
-        return parent::prepareIndexOf(__CLASS__, $int);
-    }
-
 }

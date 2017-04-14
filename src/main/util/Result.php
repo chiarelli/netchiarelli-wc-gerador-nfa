@@ -14,11 +14,11 @@ namespace NetChiarelli\WP_Plugin_NFe\util;
  */
 class Result {
     
-    private $msg;
+    protected $msg;
     
-    private $severity;
+    protected $severity;
     
-    private $previous;
+    protected $previous;
     
     /**
      * 
@@ -30,6 +30,14 @@ class Result {
         $this->msg = $msg;
         $this->severity = $severity;
         $this->previous = $previous;
+    }
+    
+    function add(Result $last) {
+        if($this->isTheLast()) {
+            $this->previous = $last;
+        } else {
+            $this->previous->add($last);
+        }
     }
     
     /**
@@ -77,6 +85,7 @@ class Result {
     }
     
     /**
+     * Verifica se este é o ultima da cadeia.
      * 
      * @return boolean
      */
@@ -85,10 +94,15 @@ class Result {
     }
     
     /**
+     * Retorna o resultado imediatamente posterior a este; ou FALSE se este for 
+     * o último (ou único). 
      * 
      * @return Result
      */
     function getPrevious() {
+        if($this->isTheLast()) {
+            return FALSE;
+        }
         return $this->previous;
     }
     

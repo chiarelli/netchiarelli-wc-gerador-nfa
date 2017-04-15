@@ -36,6 +36,8 @@ try {
     
     \NetChiarelli\WP_Plugin_NFe\draft\Main::main();
     
+//    \NetChiarelli\WP_Plugin_NFe\draft\Foo::decodeQueryClass();
+    
 //    echo '<pre>';
 //
 //    echo '</pre>';

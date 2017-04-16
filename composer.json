@@ -1,11 +1,12 @@
 {
     "name": "chiarelli/wc-gerador-nfae",
+    "version": "0.0.1-alpha",
     "description": "Description: Gerador de Nota Eletrônica Avulsa (Brazil only)",
     "type": "wordpress-plugin",
     "license": "GPL v2 or later",
     "authors": [
         {
-            "name": "chiarelli",
+            "name": "Raphael Mathias Chiareli Gomes",
             "email": "chiarelli.rm@gmail.com"
         }
     ],

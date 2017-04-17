@@ -1,0 +1,40 @@
+{
+    "name": "chiarelli/wc-gerador-nfae",
+    "version": "0.0.1-alpha",
+    "description": "Description: Gerador de Nota Eletrônica Avulsa (Brazil only)",
+    "type": "wordpress-plugin",
+    "license": "GPL v2 or later",
+    "authors": [
+        {
+            "name": "Raphael Mathias Chiarelli Gomes",
+            "email": "chiarelli.rm@gmail.com"
+        }
+    ],
+    "repositories": [    
+        {
+            "type": "vcs",
+            "url": "/var/www/html/API-NFe"
+        }
+    ],
+    "require": {
+        "beberlei/assert": "^2.7",
+        "chiarelli/api-nfe": "dev-feature/chiarelli-continuing-separation"
+        
+    },
+    "require-dev": {
+        "codeception/codeception": "dev-master",
+        "megahertz/guzzle-tor": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {      
+            "NetChiarelli\\WP_Plugin_NFe\\": "src/main/"
+        },
+        "files": ["src/constants.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NetChiarelli\\WP_Plugin_NFe\\draft\\": "src/draft/"        
+        },
+        "classmap": ["src/tests/forTests/"]
+    }
+}

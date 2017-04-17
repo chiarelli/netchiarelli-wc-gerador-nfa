@@ -1,0 +1,8 @@
+## YAML Template.
+
+php-version-invalid:
+    value: A versão do PHP tem que ser maior ou igual a %1$s. Versão atual %2$s.
+
+wp-version-invalid :
+    value: A versão do Wordpress tem que ser maior ou igual a %1$s. Versão atual %2$s.
+
